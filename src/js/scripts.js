@@ -840,7 +840,6 @@ window.addEventListener("resize", () => {
   let vw = window.innerWidth * 0.01;
   document.documentElement.style.setProperty("--vw", `${vw}px`);
   resizeCanvas();
-  console.log("resize");
 });
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit

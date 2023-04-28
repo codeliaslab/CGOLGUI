@@ -23,11 +23,18 @@ canvas#canvas {
     margin-right: 10px;
 }
 .formation {
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid black;
+    margin: 8px 5px;
+    padding: 8px 5px;
+    border: 1px solid transparent;
+    background: #777777;
+    cursor: grab;
 }
-
+.formation:hover {
+    background: #58646a;
+}
+.formation:active {
+    cursor: grabbing;
+}
 
 .button-4 {
     appearance: none;
@@ -100,5 +107,33 @@ canvas#canvas {
     }
     canvas#canvas {
         width: calc(var(--vw, 1vw) * 100);
+    }
+    div#control-panel {
+        width: 100%;
+        background: #777777;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #formations {
+        height: 500px;
+        width: 60%;
+        overflow-y: scroll;
+        border: 1px solid black;
+        margin-right: 10px;
+        background: #777777;
+    }
+    .formation {
+        margin: 15px 45px 15px 15px;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 3px;
+        box-shadow: 4px 3px 3px #00000047;
+        background: #8c9292;
+    }
+    .button-4 {
+        width: 115px;
+        height: 80px;
+        font-size: 20px;
     }
   }
