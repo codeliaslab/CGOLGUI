@@ -1,0 +1,104 @@
+body {
+    background: #3b3b3b;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+canvas#canvas {
+    background: #111111;
+    width: 800px;
+}
+
+#formations {
+    height: 500px;
+    width: 150px;
+    overflow-y: scroll;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+.formation {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+
+.button-4 {
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+    margin: 10px 0;
+  }
+
+  .button-4.start {
+    background-color: green;
+  }
+
+  .button-4.pause {
+    background-color: #db7618;
+    
+  }
+  
+  .button-4:hover {
+    text-decoration: none;
+    transition-duration: 0.1s;
+  }
+  
+  .button-4:disabled {
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
+  }
+  
+  .button-4:active {
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+  }
+  
+  .button-4:focus {
+    outline: 1px transparent;
+  }
+  
+  .button-4:before {
+    display: none;
+  }
+  
+  .button-4:-webkit-details-marker {
+    display: none;
+  }
+
+
+  @media (max-width: 600px) {
+    body {
+        flex-direction: column-reverse;
+    }
+    canvas#canvas {
+        width: calc(var(--vw, 1vw) * 100);
+    }
+  }
